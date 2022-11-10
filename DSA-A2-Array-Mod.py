@@ -12,3 +12,18 @@
 # Your program should be uploaded to github before 1:30pm
 # Record a demo presenting your program
 # Send the demo directly to my messenger
+
+# Example Output:
+
+# Array: [1, 4, 3, 4, 4, 5, 6 ,2 ,56, 200]
+# Menu:
+#  1 -> Add an element
+#  2 -> Insert an element
+#  3 -> Modify an element
+#  4 -> Delete an element
+#  5 -> Arrange in ascending order
+#  6 -> Arrange in descending order
+# What do you want to do? (1-6): 4
+# Enter the index you want to delete: 3
+# The element has been deleted
+# This is the new array: Array: [1, 4, 3, 4, 5, 6 ,2 ,56, 200]
