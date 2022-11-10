@@ -191,4 +191,8 @@ def main():
         print("Error! Invalid input. Press any key to continue...\n")
         
 main()        
-        
+
+
+# REFERENCES        
+#https://www.youtube.com/watch?v=6a39OjkCN5I
+#https://www.youtube.com/watch?v=63nw00JqHo0
