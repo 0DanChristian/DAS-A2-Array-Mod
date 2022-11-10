@@ -6,12 +6,13 @@
 # - perform the selected option (you may prompt additional info to user when need)
 # - display the resulting values of the array
 
+
 # Note: 
-# The program has an array variable containing 10 random numbers
-# You may add other options and features
-# Your program should be uploaded to github before 1:30pm
-# Record a demo presenting your program
-# Send the demo directly to my messenger
+# - The program has an array variable containing 10 random numbers
+# - You may add other options and features
+# - Your program should be uploaded to github before 1:30pm
+# - Record a demo presenting your program
+# - Send the demo directly to my messenger
 
 # Example Output:
 
@@ -36,7 +37,7 @@ OFFSETT = 4
 
 genlist = [81,15,67,32,73,50,24,3,21,72]
 
-# 'menu', creates the main menu to choose option or exit program
+# 'the menu', creates the main menu to choose option or exit program
 def list_menu():
     name = ' '*int(OFFSETT/2) + "Playing with Lists"
     dotted = (OFFSETT+len(name))*'-'
@@ -48,3 +49,28 @@ def list_menu():
     for i, opt in enumerate(options):
         print(i+1, opt)
     print(dotted)
+
+# 'open_add_e', adds an element to the list
+def open_add_e():
+    while len(genlist) >= totalvalues:
+        add = input("Input the number between {} and {} that you want to add to this list: ".format(min, max))
+        try:
+            add = int(add)
+        except:
+            print("Sorry, your input must be an integer!")
+            continue
+        if min <= add <= max:
+            genlist.append(add)
+            print("The number has been added!")
+            print("\nYour New Array: ", genlist, "\n")
+            main()
+        else:
+            print("Error! Your number was not in range")
+
+# 'open_rev_l', reverses the order of the list
+def open_rev_l():
+    genlist.reverse()
+    print("The list has been reversed!")
+    print("\nYour New Array: ", genlist, "\n")
+    main()
+
