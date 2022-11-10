@@ -90,6 +90,26 @@ def open_del_e():
             main()
         else:
             print("Error! Your number was not in the list!")
-            
-        
-        
+
+# 'open_sum_e', determines the sum of all the elements in the list
+def open_sum_e():
+    listsum = sum(genlist)
+    print("\nThe sum of the values in the list is: ", listsum, "\n")
+    print("\nYour New Array: ", genlist, "\n")
+    main()
+
+# 'open_asc_l', sorts the list in ascending order
+def open_asc_l():
+    genlist.sort()
+    print("The list has been arranged in ascending order!")
+    print("\nYour New Array: ", genlist, "\n")
+    main()
+
+# 'open_dsc_l', sorts the list in descending order
+def open_dsc_l():
+    genlist.sort()
+    genlist.reverse()
+    print("The list has been arranged in descending order!")
+    print("\nYour New Array: ", genlist, "\n")
+    main()
+
