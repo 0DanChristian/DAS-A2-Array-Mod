@@ -27,3 +27,24 @@
 # Enter the index you want to delete: 3
 # The element has been deleted
 # This is the new array: Array: [1, 4, 3, 4, 5, 6 ,2 ,56, 200]
+
+import random
+totalvalues = 10
+min = 0
+max = 99
+OFFSETT = 4
+
+genlist = [81,15,67,32,73,50,24,3,21,72]
+
+# 'menu', creates the main menu to choose option or exit program
+def list_menu():
+    name = ' '*int(OFFSETT/2) + "Playing with Lists"
+    dotted = (OFFSETT+len(name))*'-'
+    options = ["[Reverse the List]", "[Add an element]", "[Delete an element]", "[Find the sum]", 
+                "[Arrange in ascending order]", "[Arrange in descending order]", "[Exit]"]
+    print('{} \n{} \n{}'.format(dotted, name, dotted))
+    print("\nArray: ", genlist, "\n")
+    print("What would you like to do with this list?")
+    for i, opt in enumerate(options):
+        print(i+1, opt)
+    print(dotted)
