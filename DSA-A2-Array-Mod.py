@@ -50,7 +50,7 @@ def list_menu():
         print(i+1, opt)
     print(dotted)
 
-# 'open_add_e', adds an element to the list
+# 'open-add-e', adds an element to the list
 def open_add_e():
     while len(genlist) >= totalvalues:
         add = input("Input the number between {} and {} that you want to add to this list: ".format(min, max))
@@ -67,10 +67,29 @@ def open_add_e():
         else:
             print("Error! Your number was not in range")
 
-# 'open_rev_l', reverses the order of the list
+# 'open-rev-l', reverses the order of the list
 def open_rev_l():
     genlist.reverse()
     print("The list has been reversed!")
     print("\nYour New Array: ", genlist, "\n")
     main()
 
+# 'open-del-e', deletes an element from the list
+def open_del_e():
+    while len(genlist) >= totalvalues:
+        pickdel = input("Select the number you want to delete from the list: ")
+        try:
+            pickdel = int(pickdel) 
+        except:
+            print("Sorry, your input must be an integer!")
+            continue
+        if pickdel in genlist:
+            genlist.remove(pickdel)
+            print("The number has been deleted!")
+            print("\nYour New Array: ", genlist, "\n")
+            main()
+        else:
+            print("Error! Your number was not in the list!")
+            
+        
+        
